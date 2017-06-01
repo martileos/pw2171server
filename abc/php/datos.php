@@ -3,8 +3,8 @@
 	function valida(){
 		$respuesta=false;
 		$conexion=conecta();
-		$u=GetSQLValueString($_GET["usuario"],"text");
-		$c=GetSQLValueString(md5($_GET["clave"]),"text");
+		$u=GetSQLValueString($_POST["usuario"],"text");
+		$c=GetSQLValueString(md5($_POST["clave"]),"text");
 		$consulta=sprintf("select usuario,clave 
 			               from usuarios 
 			               where usuario=%s and clave=%s 
@@ -17,7 +17,7 @@
 		print(json_encode($salidaJSON));
 	}
 	//Menú principal
-	$opcion=$_GET["opcion"];
+	$opcion=$_POST["opcion"];
 	switch ($opcion) {
 		case 'valida':
 			valida();
