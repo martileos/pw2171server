@@ -1,7 +1,6 @@
 var iniciaApp = function(){
 	//Variable global
 	var claveUsuario = "";
-
 	var entrar=function(){
 		var usuario = $("#txtUsuario").val();
 		var clave   = $("#txtClave").val();
