@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de Ejemplo</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	<script src="js/eventos.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Sistema de Ejemplo</h1>
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default" id="btnInicio">Inicio
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-primary" id="btnAltas">Altas
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-danger" id="btnBajas">Bajas
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-warning" id="btnCambios">Cambios
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-info" id="btnConsultas">Consultas
+					</button>
+				</li>
+			</ul>
+		</nav>		
+	</header>
+	<main>
+		<section>
+			<article class="panel panel-primary" id="datosUsuario">
+				<article class="panel-heading">							
+					<h3 class="panel-title">Datos del Usuario</h3>
+				</article>
+				<article class="panel-body">
+					<input type="text" placeholder="Usuario" id="txtUsuario" class="form-control" autofocus>
+					<input type="password" placeholder="Clave" id="txtClave" class="form-control">
+					<button class="btn btn-success btn-lg btn-block" id="btnEntrar">	
+						Entrar
+					</button>
+				</article>
+			</article>
+		</section>
+		<section id="secUsuarios">
+			<h2>Datos del usuario</h2>
+			<input type="text" 
+				   id="txtNomUsuario" placeholder="Usuario"
+				   class="form-control">
+			<input type="text" 
+				   id="txtNomNombre" placeholder="Nombre completo"
+				   class="form-control">
+			<input type="password" 
+				   id="txtNomClave" placeholder="Contraseña"
+				   class="form-control">
+			<input type="text" 
+				   id="txtNomDepto" placeholder="Departamento"
+				   class="form-control">
+			<input type="text" 
+				   id="txtNomVigencia" placeholder="Vigencia"
+				   class="form-control">
+		</section>
+		<section id="secConsultas">
+			<table id="tblConsultas" class="table table-bordered table-striped">				
+			</table>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
